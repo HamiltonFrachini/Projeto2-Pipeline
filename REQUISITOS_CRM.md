@@ -1,9 +1,9 @@
-### **Documento de Requisitos com Validações - Sistema de CRM e Vendas da ZapFlow**
+### **Documento de Requisitos com Validações - Sistema de CRM**
 
 ---
 
 #### **Objetivo**
-O objetivo deste documento é definir os requisitos funcionais e as validações necessárias para o desenvolvimento do frontend do Sistema de CRM e Vendas da ZapFlow, desenvolvido com Streamlit. O sistema visa capturar informações sobre vendas realizadas, validá-las e exibi-las na tela.
+O objetivo deste documento é definir os requisitos funcionais e as validações necessárias para o desenvolvimento do frontend do Sistema de CRM, desenvolvido com Streamlit. O sistema visa capturar informações sobre vendas realizadas, validá-las e exibi-las na tela.
 
 ---
 
@@ -50,7 +50,7 @@ Esse diagrama mostra o fluxo completo desde a entrada até o salvamento dos dado
 #### **Requisitos Funcionais e Validações**
 
 1. **Título do Sistema**
-   - **Descrição:** O sistema deve exibir o título "Sistema de CRM e Vendas da ZapFlow - Frontend Simples" no topo da página.
+   - **Descrição:** O sistema deve exibir o título "Sistema de CRM - Frontend Simples" no topo da página.
    - **Justificativa:** Identificar claramente o sistema e sua finalidade para o usuário.
 
 2. **Campos de Entrada de Dados**
@@ -107,13 +107,13 @@ Esse diagrama mostra o fluxo completo desde a entrada até o salvamento dos dado
       - **Descrição:** Campo de seleção para escolher o produto vendido.
       - **Tipo de Entrada:** `selectbox` (Seleção)
       - **Opções Disponíveis:**
-        - "ZapFlow com Gemini"
-        - "ZapFlow com chatGPT"
-        - "ZapFlow com Llama3.0"
+        - "Prod1"
+        - "Prod2"
+        - "Prod3"
       - **Validação Esperada:**
         - O produto selecionado deve ser uma das opções válidas.
         - Não permitir seleção de produtos fora das opções listadas.
-      - **Exemplo de Uso:** O usuário seleciona "ZapFlow com chatGPT".
+      - **Exemplo de Uso:** O usuário seleciona "Prod1".
 
 3. **Botão de Submissão**
    - **Descrição:** Um botão para salvar e exibir os dados inseridos na tela.
