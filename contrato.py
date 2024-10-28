@@ -9,6 +9,17 @@ class ProdutoEnum(str, Enum):
     produto3 = "Prod3"
 
 class Vendas(BaseModel):
+    """
+    Modelo de dados para as vendas.
+
+    Args:
+        email (EmailStr): email do comprador
+        data (datetime): data da compra
+        valor (PositiveFloat): valor da compra
+        produto (PositiveInt): nome do produto
+        quantidade (PositiveInt): quantidade de produtos
+        produto (ProdutoEnum): categoria do produto
+    """
 
     email: EmailStr # zeh =! zeh@gmail.com
     data: datetime
@@ -16,14 +27,3 @@ class Vendas(BaseModel):
     quantidade: PositiveInt
     produto: ProdutoEnum
 
-    #   """
-    #Modelo de dados para as vendas.
-
-    #Args:
-    #    email (EmailStr): email do comprador
-    #    data (datetime): data da compra
-    #    valor (PositiveFloat): valor da compra
-    #    produto (PositiveInt): nome do produto
-    #    quantidade (PositiveInt): quantidade de produtos
-    #    produto (ProdutoEnum): categoria do produto
-    #"""
